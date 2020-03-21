@@ -5,6 +5,8 @@
 body {
     margin: 0;
     font-family: sans-serif;
+    /*imagen de fondo*/
+    background-image: url("../img/img-doctor.jpg");
     
 }
 .formulario {
@@ -15,6 +17,8 @@ body {
     padding: 20px;
     box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);
     position: relative;
+    /*backgroud*/
+    background-color: white;
     
     
     
