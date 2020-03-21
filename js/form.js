@@ -1,5 +1,5 @@
 document.querySelector('#submit').addEventListener('click',function(){
-    
+//vars    
     let cliente = document.querySelector('#cliente').value;
     let fecha = document.querySelector('#fecha').value;
     let hora = document.querySelector('#hora').value;
