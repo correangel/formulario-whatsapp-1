@@ -48,6 +48,11 @@
             doctor = $('#doctor').val()
         })
 
+        $('#motivos').change(function(event) {
+            // motivos = $('#motivos').val()
+            // console.log($('#motivos').val())
+        })
+
         $('#consulta').change(function(event) {
             consulta = $('#consulta').val()
             if (cliente == null && fecha == null && hora == null && doctor == null && consulta == null) {
@@ -68,8 +73,12 @@ document.querySelector('#submit').addEventListener('click',function(){
     let hora = document.querySelector('#hora').value;
     let doctor = document.querySelector('#doctor').value;
     let consulta = document.querySelector('#consulta').value;
+    // let motivos = document.querySelector('#motivos').value;
+    const selected = document.querySelectorAll('#motivos option:checked');
+    const motivos = Array.from(selected).map(el => el.value);
 
-    let url = "https://api.whatsapp.com/send?phone=543794345079&text=*_Consultas Medicas_*%0A*Reservas*%0A%0A*¿Cual es tu nombre?*%0A" + cliente + "%0A*Indica la fecha de tu reserva*%0A" + fecha + "%0A*Indica la hora de tu reserva*%0A" + hora + "%0A*Doctor de preferencia*%0A" + doctor + "%0A*¿Cual es consulta que se desea realizar?*%0A" + consulta;
+    let url = "https://api.whatsapp.com/send?phone=543794345079&text=*_Consultas Medicas_*%0A*Reservas*%0A%0A*¿Cual es tu nombre?*%0A" + cliente + "%0A*Indica la fecha de tu reserva*%0A" + fecha + "%0A*Indica la hora de tu reserva*%0A" + hora + "%0A*Doctor de preferencia*%0A" + doctor + "%0A*¿Motivos de la consulta?*%0A" + motivos + "%0A*¿Cual es consulta que se desea realizar?*%0A" + consulta;
+    // console.log(url)
     window.open(url);
 
 });

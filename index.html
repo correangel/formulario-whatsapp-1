@@ -56,8 +56,32 @@
             <option value="Dr. Candido Perez">Dr. Candido Perez</option>
             <option value="Dra. Sunilda Gomez">Dra. Sunilda Gomez</option>
         </select>
+
+        <label for="motivos" class="formulario__label" required>¿Motivo de la consulta? <small><b>Puede seleccionar más de uno</b></small></label>
+        <select id="motivos" multiple class="formulario__input" required>
+            <<option value="Fiebre">Fiebre</option>
+            <option value="Dolor de cabeza (cefalea)">Dolor de cabeza (cefalea)</option>
+            <option value="Nauseas">Nauseas</option>
+            <option value="Vomitos">Vomitos</option>
+            <option value="Dolor abdominal">Dolor abdominal</option>
+            <option value="Dolor lumbar">Dolor lumbar</option>
+            <option value="Dolor en miembros superiores o inferiores">Dolor en miembros superiores o inferiores</option>
+            <option value="Dolor tórax">Dolor tórax</option>
+            <option value="Dolor en región cardiaca">Dolor en región cardiaca</option>
+            <option value="Acides/dolor estomago">Acides/dolor estomago</option>
+            <option value="Tos seca">Tos seca</option>
+            <option value="Tos con expectoración">Tos con expectoración</option>
+            <option value="Dolor de garganta/oido">Dolor de garganta/oido</option>
+            <option value="Diarrea">Diarrea</option>
+            <option value="Dificultad respiratoria">Dificultad respiratoria</option>
+            <option value="Dolor articular">Dolor articular</option>
+            <option value="Traumatismo/fracturas">Traumatismo/fracturas</option>
+            <option value="Embarazo confirmado con sangrado ginecológico">Embarazo confirmado con sangrado ginecológico</option>
+            <option value="Embarazo confirmado con dolor/contracciones">Embarazo confirmado con dolor/contracciones</option>
+        </select>
+
         
-        <label for="servicios" class="formulario__label" required>¿Cuál es la consulta que se desea realizar?</label>
+        <label for="consulta" class="formulario__label" required>¿Cuál es la consulta que se desea realizar?</label>
         <select id="consulta" name="listaservicios" class="formulario__input" required>
             <option value="" selected disabled>Seleccione</option>
             <option value="Consulta común">Consulta común</option>
@@ -75,6 +99,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/8.11.8/sweetalert2.min.js"></script>
     <script>
+
         // // jQuery(document).ready(function($) {
         // $('#submit').hide();
 
@@ -102,8 +127,9 @@
         //     $('#submit').hide();
         // }
 
-        // $('#cliente').change(function(event) {
-        //     cliente = $('#cliente').val()
+        // $('#motivos').change(function(event) {
+        //     // cliente = $('#cliente').val()
+        //     console.log($('#motivos').val())
         // })
 
         // $('#fecha').change(function(event) {
